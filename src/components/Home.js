@@ -11,7 +11,7 @@ const Home = () => {
             </nav>
 
             <div className="mt-0">
-                <img src="/img/fondo.png" className="ms-0" />
+                <img src="/img/fondo.png" className="ms-0 tama-imagen" />
             </div>
 
             <Menu/>
