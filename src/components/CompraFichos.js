@@ -6,6 +6,9 @@ const CompraFichos = () => {
     return (
         <Fragment>
             <BarraEstudiantes />
+            <nav className="nav-fondo">
+                <h1 className="ms-3">Pagina de Compras</h1 >
+            </nav>
             <h3 className="ms-5 mt-5">Realice su Compra</h3>
 
             <div className="ms-5 col-md-3">

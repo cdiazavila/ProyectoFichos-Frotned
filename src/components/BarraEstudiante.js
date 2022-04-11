@@ -8,9 +8,9 @@ const BarraEstudiantes = () => {
         <img src="/img/unicordoba_logo1.png" className="mt-3 ms-4" />
         <nav className="Barra mt-5">
 
-          <Link to="/#" className="ms-4">Compras</Link>
-          <Link to="/#" className="ms-4">Historial</Link>
-          <Link to="/#" className="ms-4">Lista Compras</Link>
+          <Link to="/comprafichos" className="ms-4">Compras</Link>
+          <Link to="/historial" className="ms-4">Historial</Link>
+          <Link to="/informacionCompra" className="ms-4">Lista Compras</Link>
           <Link to="/#" className="ms-4">Config</Link>
           <Link to="/#" className="ms-4">Salir</Link>
         </nav>
