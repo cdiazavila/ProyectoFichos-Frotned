@@ -2,7 +2,13 @@ import { Fragment } from "react";
 import BarraEstudiantes from "./BarraEstudiante";
 import Footer from "./Footer";
 
-const CompraFichos = () => {
+const CompraFichos = (props) => {
+        
+    const validar= (e)=>{
+        e.preventDefault();
+ console.log('click');
+    }
+    console.log(props.sede)
     return (
         <Fragment>
             <BarraEstudiantes />
@@ -12,7 +18,9 @@ const CompraFichos = () => {
             <h3 className="ms-5 mt-5">Realice su Compra</h3>
 
             <div className="ms-5 col-md-3">
-                <from>
+                <from
+                   onSubmit={validar}
+                >
                     <div className="form-floating">
 
                         <input type="text" name="id" id="id" placeholder="Corfirmar" className="form-control" />
@@ -22,7 +30,11 @@ const CompraFichos = () => {
 
 
                         <select id="sede" name="sede" className="form-control mt-4">
-                            <option value="">Elige tu sede</option>
+                        <option value="">Elije una sede</option>
+                            {props.sede.map(sedes => (
+                                  <option value={sedes.id}>{sedes.nombre}</option>
+                                ))}
+               
 
                         </select>
 

@@ -1,5 +1,5 @@
 import { Fragment } from "react/cjs/react.production.min";
-import { Link, withRouter } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 const BarraEstudiantes = () => {
     return ( 
 
@@ -12,7 +12,7 @@ const BarraEstudiantes = () => {
           <Link to="/historial" className="ms-4">Historial</Link>
           <Link to="/informacionCompra" className="ms-4">Lista Compras</Link>
           <Link to="/#" className="ms-4">Config</Link>
-          <Link to="/#" className="ms-4">Salir</Link>
+          <Link to="/login" className="ms-4">Salir</Link>
         </nav>
       </header>
         </Fragment>
